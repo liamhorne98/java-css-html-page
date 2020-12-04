@@ -1,0 +1,25 @@
+.left {
+    height: 350px;
+    width: 150px;
+    background-color: white;
+    margin-bottom: 0.7em;
+    float: left;
+  
+    }
+    
+
+    .head {
+    height: 85px;
+    width: 300px;
+    margin-bottom: 1em;
+    }
+    .nav {
+   
+    margin-left: 150px;
+    margin-top: 1em;
+    
+    height: 45px;
+    }
+    .main {
+    margin-left: 150px;
+    }

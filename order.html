@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+    <script src="prac.js">
+      // document.write("pineapple does not belong on pizza");
+    </script>
+    <link rel="stylesheet" href="styling.css" />
+  </head>
+  <body>
+    <img src="swegga.jpg" class="left" />
+    <img src="delivery.gif" class="head" />
+    <div class="nav">
+        <!--
+      <a href="order.html">Home</a>
+      <a href="service.html">Service</a>
+      <a href="product.html">Product</a>
+      <a href="orderstatus.html">Order Status</a>
+      <a href="contactus.html">Contact Us</a>-->
+      <img src="links.gif" usemap="#mylinks">
+      <map name="mylinks">
+
+        <area target="" alt="" title="" href="order.html" coords="8,3,96,39" shape="rect">
+        <area target="" alt="" title="" href="services.html" coords="106,4,194,40" shape="rect">
+        <area target="" alt="" title="" href="product.html" coords="203,4,308,40" shape="rect">
+        <area target="" alt="" title="" href="orderstatus.html" coords="304,0,444,40" shape="rect">
+        <area target="" alt="" title="" href="contactus.html" coords="446,1,559,35" shape="rect">
+
+
+
+      </map>
+    </div>
+    <div class="main">
+      <table border="1px" solid black>
+        <tr>
+          <th>Description</th>
+          <th>Size</th>
+          <th>Colour</th>
+          <th>Prize</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td>Female Ski Jacket</td>
+          <td class="select">
+            <select>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </td>
+          <td>
+            <select>
+              <option value="red">Red</option>
+              <option value="pink">Pink</option>
+              <option value="black">Black</option>
+            </select>
+          </td>
+          <td id="fprice">R150.95</td>
+          <td><input type="text" id="famount" /></td>
+          <td><input type="text" id="fresult" /></td>
+        </tr>
+        <tr>
+          <td>Male Ski Jacket</td>
+          <td class="select">
+            <select>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </td>
+          <td>
+            <select>
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="white">White</option>
+            </select>
+          </td>
+          <td>R180.95</td>
+          <td><input type="text" id="mamount" /></td>
+          <td><input type="text" id="mresult" /></td>
+        </tr>
+        <tr>
+          <td colspan="4">Click to confirm and process your order:</td>
+          <td>
+            <input
+              type="button"
+              id="calc"
+              onclick="totalcost('famount')"
+              value="Total Amount"
+            />
+          </td>
+          <td><input type="text" id="result" /></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
